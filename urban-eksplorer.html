@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Explorer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .hero {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPum36a1AN5BF-XUpjr0deB0WdGqoOXyOfGYtxg4pGztoxfwTDQ&s=10&ec=72940544') center/cover no-repeat;
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .jelajahi-link {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: white;
+      color: #333;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .jelajahi-link:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 10%;
+      background: #fff;
+      text-align: center;
+    }
+
+    .about img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .about div {
+      max-width: 800px;
+    }
+
+    .fitur {
+      padding: 50px 10%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .dark-section {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6HhT_eKpNOsuQFNT-Jf8LQTKZIN_RLBdZtNNBBIsACy2XfHqWeA&s=10&ec=72940544') center/cover no-repeat;
+      color: white;
+    }
+
+    .fitur-box {
+      flex: 1;
+      text-align: center;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      min-width: 200px;
+    }
+
+    .layanan {
+      display: flex;
+      gap: 20px;
+      padding: 60px 10%;
+      background: #fff;
+      flex-wrap: wrap;
+    }
+
+    .layanan-card {
+      flex: 1;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 250px;
+    }
+
+    .layanan-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .kontak {
+      padding: 60px 10%;
+      background: #fff;
+      text-align: center;
+    }
+
+    .kontak form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .kontak input,
+    .kontak textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .kontak button {
+      background: #333;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+
+    .testimoni-section {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6HhT_eKpNOsuQFNT-Jf8LQTKZIN_RLBdZtNNBBIsACy2XfHqWeA&s=10&ec=72940544') center/cover no-repeat;
+      color: white;
+      padding: 80px 10%;
+    }
+
+    .testimoni-section .fitur-box {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .about,
+      .layanan,
+      .fitur {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Urban Explorer</h1>
+    <p>Menjelajahi sudut kota dengan semangat petualang</p>
+    <a href="#about" class="jelajahi-link">JELAJAHI</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT54xZbuFo3k7RrVh40wHLLP48alIVFDbeq5GypvvGCGalYkwbd1g&s=10&ec=72940544" alt="Tentang Urban Explorer">
+    <div>
+      <h2>TENTANG KAMI</h2>
+      <p>Kami hadir untuk menginspirasi dan memfasilitasi eksplorasi kota dengan gaya unik. Urban Explorer adalah tentang petualangan, kebebasan, dan perspektif baru dari lanskap urban.</p>
+    </div>
+  </section>
+  
+  <!-- Fitur Section -->
+  <section class="fitur dark-section">
+    <div class="fitur-box">Peta Eksplorasi</div>
+    <div class="fitur-box">Rute Unik</div>
+    <div class="fitur-box">Komunitas Lokal</div>
+  </section>
+
+  <!-- Layanan Section -->
+  <section class="layanan">
+    <div class="layanan-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPdtfoU6fchbzp8NQXNK1vAyOnqZKAj-BL_fxId6QBIY03nbwYWw&s=10&ec=72940544" alt="Layanan 1">
+      <h3>Tur Jalan Kaki</h3>
+      <p>Nikmati tur tematik dengan pemandu lokal terpercaya.</p>
+    </div>
+    <div class="layanan-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRnsa-dXHa1OEFi3fyMtIgpsOa98yCXoHR3g-ud4ssg5cQTcuOrg&s=10&ec=72940544" alt="Layanan 2">
+      <h3>Eksplorasi Mandiri</h3>
+      <p>Dapatkan panduan digital untuk menjelajahi sendiri.</p>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="fitur testimoni-section">
+    <div class="fitur-box">
+      <p>"Pengalaman luar biasa! Menyusuri kota jadi terasa magis. Sangat direkomendasikan untuk siapa pun yang ingin merasakan sisi lain dari petualangan urban."</p>
+    </div>
+  </section>  
+
+  <!-- Kontak -->
+  <section class="kontak">
+    <h2>HUBUNGI KAMI</h2>
+    <form>
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+</body>
+</html>
